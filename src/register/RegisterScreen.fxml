@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="registerScreenPane" prefHeight="208.0" prefWidth="295.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="register.RegisterScreenController">
+   <children>
+      <Pane layoutX="-3.0" layoutY="-3.0" prefHeight="282.0" prefWidth="298.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <JFXTextField fx:id="usernameRegField" labelFloat="true" layoutX="59.0" layoutY="29.0" prefHeight="42.0" prefWidth="180.0" promptText="Username" unFocusColor="#0090ff">
+               <font>
+                  <Font name="Fira Code Bold" size="18.0" />
+               </font></JFXTextField>
+            <JFXPasswordField fx:id="passwordRegField" labelFloat="true" layoutX="59.0" layoutY="101.0" prefHeight="42.0" prefWidth="180.0" promptText="Password" unFocusColor="#0090ff">
+               <font>
+                  <Font name="Fira Code Bold" size="18.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXButton fx:id="registerButton" buttonType="RAISED" contentDisplay="CENTER" layoutX="37.0" layoutY="220.0" onAction="#registerButtonClicked" ripplerFill="#0090ff" style="-fx-background-color: #05a3ff;" text="Register">
+               <font>
+                  <Font name="Fira Code Bold" size="16.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="loginscreenButton" buttonType="RAISED" contentDisplay="CENTER" layoutX="149.0" layoutY="220.0" onAction="#loginscreenButtonClicked" ripplerFill="#0090ff" style="-fx-background-color: #05a3ff;" text="Login Screen">
+               <font>
+                  <Font name="Fira Code Bold" size="16.0" />
+               </font>
+            </JFXButton>
+            <Label fx:id="messageLabel" layoutX="59.0" layoutY="165.0" prefHeight="32.0" prefWidth="180.0" style="-fx-background-color: #ffffff;" textFill="RED" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
